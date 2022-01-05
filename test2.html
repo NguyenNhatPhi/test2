@@ -6,21 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="test2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon"  type="images/x-icons" href="image/k.png">
 </head>
 <body>
-    <div class="logo">
-        <img src="image/k.png" height="100" width="100">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Hover</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Sign In</a></li>
-            <li><a href="">Sign up</a></li>
-        </ul>
-    </div>
-    <span></span>
-    <script src="test2.js"></script>
+<!--Menu-->
+  <div class="logo">
+    <img src="image/k.png" height="100" width="100">
+    <ul>
+     <li><a href="">Home</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="">Hover</a></li>
+     <li><a href="">Project</a></li>
+     <li><a href="">Sign In</a></li>
+     <li><a href="">Sign up</a></li>
+    </ul>
+  </div>
+<!--About-->
+  <div id="about">
+    <ul id="information">
+    <li><a href="#nhat-phi-inf" class="material-icons">person</a></li>
+    <li><a href="#chau-kiet-inf" class="material-icons">person</a></li>
+    <li><a href="#add-new-inf" class="material-icons" id="add">add</a></li>
+  </ul>
+  <div id="nhat-phi-inf">
+   <p class="material-icons" id="inf1">account_box</p>
+   <pre class="inf1">
+       Name: Nguyen Nhat Phi
+       Age: 19 years old
+       Front End Developer (FE)
+   </pre>
+  </div>
+  <div id="chau-kiet-inf">
+   <p class="material-icons" id="inf2">account_box</p>
+   <pre class="inf2">
+      Name: Chau Quoc Kiet
+      Age: 19 years old
+      Front End Developer (FE)
+   </pre>
+  </div>
+  <div id="add-new-inf">
+   <p class="material-icons" id="inf3">add</p>
+   <p id="add-1">Add New Person</p>
+  </div>
+ </div>
+ <!--Hover-->
+ <span></span>
+ <script src="test2.js"></script>
 </body>
 </html>

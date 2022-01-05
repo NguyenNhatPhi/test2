@@ -8,7 +8,7 @@
 :root{
     --white:#fff;
     --red:rgb(168, 28, 28);
-    --black:rgb(20, 12, 12);
+    --black:rgb(50,50,50);
 }
 .logo{
     display:flex;
@@ -16,15 +16,137 @@
     align-items: center;
     background: var(--black);
 }
-ul{
+.logo ul{
+    list-style-type: none;
     display:flex;
 }
-li{
+.logo li{
     padding:0 30px;
 }
-a{
+.logo a{
     text-decoration: none;
     color:var(--white);
     text-transform: uppercase;
     font-size: 20px;
 }
+
+/* About*/
+#about {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    width: 800px;
+    height: 500px;
+    
+    background-color: rgb(60,60,60);
+}
+/*About (Target)*/
+#about div {
+    display: none;
+}
+
+#about div:target {
+    display: block;
+}
+/*About (Menu)*/
+ul#information {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: white;  
+}
+
+ul#information li {
+    float: left; 
+}
+
+ul#information li a {
+    display: block;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(60,60,60);
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+ul#information li a:hover {
+    background-color: white;
+    color: rgb(60,60,60);
+}
+/*About Add*/
+#about #information #add {
+    color: rgb(60,60,60);
+    background-color: white;
+    font-weight: 500;
+}
+
+#about #information #add:hover {
+    background-color:rgb(60,60,60);
+    color: white;
+}
+/*About (Information)*/
+/*Nhat-Phi-Inf*/
+#nhat-phi-inf p#inf1 {
+    position: relative;
+    top: 50px;
+    left: 12px;
+    margin: 0;
+    color: white;
+    font-size: 350px;
+}
+
+#nhat-phi-inf .inf1 {
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    display: inline-block;
+    color: hsl(40,100%,50%);
+    line-height: 70px;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Chau-Kiet-Inf*/
+#chau-kiet-inf p#inf2 {
+    position: relative;
+    top: 50px;
+    left: 12px;
+    margin: 0;
+    color: white;
+    font-size: 350px;
+}
+#chau-kiet-inf .inf2 {
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    display: inline-block;
+    color: mediumseagreen;
+    line-height: 70px;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Add-New-Inf*/
+#add-new-inf p#inf3 {
+    position: relative;
+    top: 80px;
+    left: 250px;
+    margin: 0;
+    color: white;
+    font-size: 300px;
+}
+
+#add-new-inf p#inf3:hover {
+    color: rgba(255,255,255,0.2);
+}
+
+#add-new-inf p#add-1 {
+    position: absolute;
+    bottom: 0;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    left: 279px;
+    color: white; 
+}
+/*About ( finish )*/
